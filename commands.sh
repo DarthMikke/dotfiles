@@ -10,6 +10,11 @@ dotfiles_install() {
   brew install ${=WANTED}
 }
 
+dotfiles_lazyvim() {
+  cd $XDG_CONFIG_HOME
+  ln -s ./dotfiles/config/nvim ./nvim
+}
+
 dotfiles_brew() {
 
 }
