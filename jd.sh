@@ -3,10 +3,34 @@ if [ -z "$JDBASE" ]; then
 fi
 
 jd() {
-
+  printf "
+    Usage: jd <command> <parameters>
+    jd cd <a[c[.id]]>
+      change the working directory to the directory of the chosen area, category or project.
+      examples:
+        jd-cd 2
+        jd-cd 23
+        jd-cd 23.11
+  "
 }
 
 jcd() {
+  len=$(echo -n $1 | wc -c | tr -C -d 0-9)
+  case "$len" in
+  "1")
+    cd $JDBASE/${1}0-${1}9*
+    return
+    ;;
+  "2")
+    cd $JDBASE/*/${1}*
+    return
+    ;;
+  "5") ;;
+  *)
+    return 1
+    ;;
+  esac
+
   cd $JDBASE/*/*/$1*
 }
 
