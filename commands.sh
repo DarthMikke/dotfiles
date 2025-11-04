@@ -1,12 +1,8 @@
 # brew list --installed-on-request
-WANTED="cloc docker fx htop jq lazygit lsd make neovim slides viddy"
+WANTED="bat cloc docker fx htop jq lazygit lsd make neovim slides viddy"
 
 dotfiles_install() {
-  if [ $(which brew) -ne 0 ]; then
-    echo "did not find brew"
-    exit 1
-  fi
-
+  which brew > /dev/null || return 1
   brew install ${=WANTED}
 }
 
