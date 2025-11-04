@@ -9,3 +9,4 @@ alias py="python3"
 alias gotcp="go test ./... && lazygit status"
 
 alias v="nvim"
+alias cat="bat -pp"
