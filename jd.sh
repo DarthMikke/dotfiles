@@ -22,7 +22,8 @@ jcd() {
     return
     ;;
   "2")
-    cd $JDBASE/*/${1}*
+    first=$(echo "${1}" | cut -c1-1)
+    cd $JDBASE/${first}0-${first}9*/${1}*
     return
     ;;
   "5") ;;
