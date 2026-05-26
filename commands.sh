@@ -13,6 +13,12 @@ dotfiles_link_lazyvim() {
   ln -s ./dotfiles/config/nvim ./nvim
 }
 
+# Link GolangCI config
+dotfiles_link_golangci() {
+  cd $HOME
+  ln -s $XDG_CONFIG_HOME/dotfiles/home/.golangci.yml ./.golangci.yml
+}
+
 dotfiles_brew() {
 
 }
