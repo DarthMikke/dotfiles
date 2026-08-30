@@ -19,6 +19,11 @@ dotfiles_link_golangci() {
   ln -s $XDG_CONFIG_HOME/dotfiles/home/.golangci.yml ./.golangci.yml
 }
 
+dotfiles_helix() {
+  cd $XDG_CONFIG_HOME
+  ln -s ./dotfiles/config/helix ./helix
+}
+
 dotfiles_brew() {
 
 }
