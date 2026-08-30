@@ -1,3 +1,10 @@
+theme = "autumn"
+
+[editor]
+
+cursorline = true
+bufferline = "always"
+
 # Copied from github.com/LGUG2Z/helix-vim
 # 
 # 
