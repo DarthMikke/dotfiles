@@ -4,6 +4,7 @@ theme = "autumn"
 
 cursorline = true
 bufferline = "always"
+rulers = [80, 120]
 
 # Copied from github.com/LGUG2Z/helix-vim
 
