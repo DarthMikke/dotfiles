@@ -1,7 +1,7 @@
 alias ls="lsd --color=always --group-dirs=first"
 alias l="ls"
 alias la="ls -A"
-alias lt="ls --tree"
+alias lt="ls --tree --depth 1"
 alias ll="la -l"
 
 alias py="python3"
