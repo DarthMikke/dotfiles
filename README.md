@@ -1,6 +1,6 @@
 # dotfiles
 
-Heavily influenced by 
+Tracks configuration of my shell and multiple applications in Git.
 
 ## Installation
 
@@ -18,4 +18,9 @@ fi
 EOF
 ```
 
+## Currently tracked
 
+- Neovim, Helix and GolangCI config
+- zsh aliases
+- brew applications I use
+- rudimentary Johnny Decimal commands
