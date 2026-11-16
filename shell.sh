@@ -16,3 +16,5 @@ PS1=$'%F{145}%n@%f%B%m%b %F{146}%-20<..<%~%<<%f%30(l.\n. )%0(?.%F{green}.%F{red}
 
 # Add $HOME/.local/bin to PATH
 export PATH="$PATH:/$HOME/.local/bin"
+
+export OPENCODE_DIR="$XDG_CONFIG_HOME/.opencode"

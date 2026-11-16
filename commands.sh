@@ -24,6 +24,11 @@ dotfiles_helix() {
   ln -s ./dotfiles/config/helix ./helix
 }
 
+dotfiles_opencode() {
+  cd $XDG_CONFIG_HOME
+  ln -s ./dotfiles/config/opencode ./opencode
+}
+
 dotfiles_brew() {
 
 }
