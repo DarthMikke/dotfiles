@@ -26,7 +26,8 @@ dotfiles_helix() {
 
 dotfiles_opencode() {
   cd $XDG_CONFIG_HOME
-  ln -s ./dotfiles/config/opencode ./opencode
+  ln -s ./dotfiles/config/agents ./opencode/agents
+  ln -s ./dotfiles/config/skills ./opencode/skills
 }
 
 dotfiles_brew() {
