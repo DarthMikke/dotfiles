@@ -25,6 +25,7 @@ dotfiles_helix() {
 }
 
 dotfiles_opencode() {
+  # TODO: Should these be stored in ~/.share instead of ~/.config? These are user data, not config.
   cd $XDG_CONFIG_HOME
   ln -s ./dotfiles/config/agents ./opencode/agents
   ln -s ./dotfiles/config/skills ./opencode/skills
