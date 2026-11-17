@@ -19,12 +19,12 @@ dotfiles_link_golangci() {
   ln -s $XDG_CONFIG_HOME/dotfiles/home/.golangci.yml ./.golangci.yml
 }
 
-dotfiles_helix() {
+dotfiles_link_helix() {
   cd $XDG_CONFIG_HOME
   ln -s ./dotfiles/config/helix ./helix
 }
 
-dotfiles_opencode() {
+dotfiles_link_opencode() {
   # TODO: Should these be stored in ~/.share instead of ~/.config? These are user data, not config.
   cd $XDG_CONFIG_HOME
   ln -s ./dotfiles/config/agents ./opencode/agents
