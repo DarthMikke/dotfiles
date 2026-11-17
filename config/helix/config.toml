@@ -114,7 +114,7 @@ esc = ["collapse_selection", "normal_mode"]
 0 = "goto_line_start"
 "$" = "goto_line_end"
 "^" = "goto_first_nonwhitespace"
-G = "goto_file_end"
+# G = "goto_file_end"
 D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 # C = ["goto_line_start", "extend_to_line_bounds", "change_selection"]
 "%" = "match_brackets"
@@ -131,8 +131,8 @@ tab = ["insert_mode", "collapse_selection"] # tab is read by most terminal edito
 C-a = ["append_mode", "collapse_selection"]
 
 # Make selecting lines in visual mode behave sensibly
-k = ["extend_line_up", "extend_to_line_bounds"]
-j = ["extend_line_down", "extend_to_line_bounds"]
+# k = ["extend_line_up", "extend_to_line_bounds"]
+# j = ["extend_line_down", "extend_to_line_bounds"]
 
 # Clipboards over registers ye ye
 d = ["yank_main_selection_to_clipboard", "delete_selection"]
