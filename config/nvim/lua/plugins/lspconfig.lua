@@ -6,6 +6,9 @@ return {
         settings = {
           gopls = {
             buildFlags = { "-tags=e2e,local,dev,test,prod" },
+            analyses = {
+              ST1003 = false,
+            },
           },
         },
       },
